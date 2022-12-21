@@ -13,6 +13,11 @@ debug.cpurend.vsync=false
 
 # Display
 debug.force_no_blanking=true
+debug.hwui.renderer=skiagl
+debug.renderengine.backend=skiaglthreaded
+renderthread.skia.reduceopstasksplitting=true
+debug.hwui.use_hint_manager=true
+debug.hwui.target_cpu_time_percent=20
 
 # Graphics
 debug.sf.disable_backpressure=1
