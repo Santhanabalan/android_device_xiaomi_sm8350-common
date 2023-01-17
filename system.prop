@@ -8,6 +8,10 @@ persist.vendor.camera.privapp.list=com.android.camera
 ro.com.google.lens.oem_camera_package=com.android.camera
 ro.miui.notch=1
 
+# ART
+dalvik.vm.dex2oat-filter=everything
+dalvik.vm.image-dex2oat-filter=everything
+
 # Charger
 ro.charger.enable_suspend=true
 
