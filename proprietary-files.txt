@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from vili V13.0.20.0.SKDEUXM
+# All unpinned blobs below are extracted from vili V13.0.8.0.SKDMIXM
 
 # ADSP
 vendor/bin/adsprpcd
