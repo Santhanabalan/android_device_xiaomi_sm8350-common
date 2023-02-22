@@ -349,4 +349,8 @@
 
     <!-- Smart Charging -->
     <bool name="config_smartChargingAvailable">true</bool>
+
+    <!-- Defines the sysfs attribute path used by the device
+         to enable/disable DC dimming. -->
+    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/platform/soc/soc:qcom,dsi-display-primary/dimlayer_exposure</string>
 </resources>
