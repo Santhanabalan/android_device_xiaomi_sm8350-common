@@ -160,6 +160,7 @@ ro.bluetooth.a2dp_offload.supported=true
 # Camera
 camera.disable_zsl_mode=true
 vendor.camera.hal1.packagelist=com.whatsapp,com.whatsapp.w4b,com.facebook.orca,com.instagram.android
+ro.hardware.camera=xiaomi
 
 # Chipset
 ro.soc.manufacturer=QTI
