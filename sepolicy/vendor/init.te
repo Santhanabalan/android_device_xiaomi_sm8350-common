@@ -1,2 +1,6 @@
 # Fingerprint
 allow init hal_fingerprint_default:process { ptrace };
+
+# FPS info
+allow init vendor_sysfs_graphics:dir search;
+allow init vendor_sysfs_graphics:file rw_file_perms;
