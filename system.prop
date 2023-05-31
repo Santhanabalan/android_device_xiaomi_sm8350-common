@@ -12,6 +12,12 @@ debug.sf.enable_hwc_vds=1
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=50
 
+# Log
+persist.log.tag.CVP=S
+persist.log.tag.CamX=S
+persist.log.tag.SYNX-UMD=S
+persist.log.tag.CHIUSECASE=S
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
