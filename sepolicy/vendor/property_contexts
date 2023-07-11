@@ -31,3 +31,6 @@ ro.vendor.media_performance_class      u:object_r:vendor_media_performance_class
 
 # Thermal
 vendor.sys.thermal.                             u:object_r:vendor_thermal_normal_prop:s0
+
+# Fastcharge HAL
+persist.vendor.sec.fastchg_enabled              u:object_r:vendor_fastcharge_prop:s0
