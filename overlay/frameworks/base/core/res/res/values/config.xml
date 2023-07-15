@@ -350,4 +350,7 @@
     <!-- The maximum range of gamma adjustment possible using the screen
          auto-brightness adjustment setting. -->
     <fraction name="config_autoBrightnessAdjustmentMaxGamma">150%</fraction>
+
+    <!-- Smart Charging -->
+    <bool name="config_smartChargingAvailable">true</bool>
 </resources>
