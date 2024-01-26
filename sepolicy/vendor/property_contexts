@@ -10,11 +10,14 @@ persist.vendor.low.cutoff u:object_r:vendor_camera_prop:s0
 persist.vendor.aiie_capture_log.debug                     u:object_r:vendor_camera_prop:s0
 
 # Fingerprint
-ro.hardware.fp.fod    u:object_r:vendor_fp_prop:s0
-persist.vendor.sys.fp.    u:object_r:vendor_fp_prop:s0
+ro.hardware.fp.fod            u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.        u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.info    u:object_r:vendor_fp_info_prop:s0
-persist.vendor.sys.fp.uid    u:object_r:vendor_fp_info_prop:s0
-ro.hardware.fp    u:object_r:vendor_fp_prop:s0
+persist.vendor.sys.fp.uid     u:object_r:vendor_fp_info_prop:s0
+persist.vendor.fpc.           u:object_r:vendor_fp_prop:s0
+persist.vendor.goodix.        u:object_r:vendor_fp_prop:s0
+ro.hardware.fp.               u:object_r:vendor_fp_prop:s0
+vendor.fps_hal.               u:object_r:vendor_fp_prop:s0
 
 # IMEI
 ro.vendor.oem.                               u:object_r:vendor_deviceid_prop:s0
