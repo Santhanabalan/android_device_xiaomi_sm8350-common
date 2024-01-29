@@ -345,6 +345,9 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor
 
+# Miui Camera (Leica)
+$(call inherit-product-if-exists, vendor/xiaomi/vili-miuicamera/miuicamera.mk)
+
 # Native libraries whitelist
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
