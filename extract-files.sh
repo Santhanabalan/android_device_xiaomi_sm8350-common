@@ -70,7 +70,16 @@ function blob_fixup() {
             ;;
         vendor/etc/vintf/manifest/c2_manifest_vendor.xml)
             sed -ni '/ozoaudio/!p' "${2}"
-            sed -ni '/dolby/!p' "${2}"
+            ;;
+        vendor/lib/libcodec2_hidl@1.0.stock.so)
+            patchelf --set-soname libcodec2_hidl@1.0.stock.so "${2}"
+            patchelf --replace-needed libcodec2_vndk.so libcodec2_vndk.stock.so "${2}"
+            ;;
+        vendor/lib/libcodec2_vndk.stock.so)
+            patchelf --set-soname libcodec2_vndk.stock.so "${2}"
+            ;;
+        vendor/lib64/c2.dolby.avc.dec.so | vendor/lib64/c2.dolby.avc.sec.dec.so | vendor/lib64/c2.dolby.egl.so | vendor/lib64/c2.dolby.hevc.dec.so | vendor/lib64/c2.dolby.hevc.enc.so | vendor/lib64/c2.dolby.hevc.sec.dec.so | vendor/lib64/libdolbyvision.so | vendor/lib/libcodec2_soft_common.so | vendor/lib/libsfplugin_ccodec_utils.so)
+            grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
         vendor/lib64/android.hardware.secure_element@1.0-impl.so)
             "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
