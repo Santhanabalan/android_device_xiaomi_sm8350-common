@@ -15,6 +15,7 @@ persist.sys.fuse.passthrough.enable=true
 ro.apk_verity.mode=2
 
 # Log
+persist.log.tag.ACDB-LOADER=S
 persist.log.tag.CVP=S
 persist.log.tag.CamX=S
 persist.log.tag.SYNX-UMD=S
